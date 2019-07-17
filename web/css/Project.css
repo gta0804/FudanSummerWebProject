@@ -1,0 +1,12 @@
+#myCarousel img{
+    width:1250px;
+    height:650px;
+}
+body{
+    background-color: #98a8ab;
+}
+#hottestWorks,#searchResult div .panel{
+    background-color: #768e8b;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
