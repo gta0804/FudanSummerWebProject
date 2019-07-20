@@ -1,23 +1,7 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: HUAWEI
-  Date: 2019/7/17
-  Time: 22:30
-  To change this template use File | Settings | File Templates.
+This jsp file shows the search result
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-    <style>
-        #searchResult div .panel{
-            background-color: #768e8b;
-            padding-top:10px;
-            padding-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
 <%@include file="AdministratorsNav.jsp"%>
 <%@include file="SearchHeader.jsp"%>
 <div id="searchResult" class="container">

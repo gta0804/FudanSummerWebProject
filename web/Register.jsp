@@ -2,14 +2,6 @@
 This jsp file is for visitors to register
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Register</title>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/Project.css">
-    <script src="js/register.js"></script>
-</head>
-<body>
 
 <!-- Here is the nav -->
 <%@include file="VisitorNav.jsp"%>
@@ -22,7 +14,7 @@ This jsp file is for visitors to register
     <h2 class="text-center">Register</h2>
     <div class="row">
         <div class="col-md-6">
-            <form action="#" method="post" onsubmit="return check()" class="form-group" role="form">
+            <form action="" method="post" onsubmit="return check()" class="form-group" role="form">
                 <label for="name">username</label>
                 <input type="text" id="username" class="form-control" placeholder="Please enter username" name="username" onblur="checkName()"><span id="usernameHint"></span>
 
@@ -42,6 +34,8 @@ This jsp file is for visitors to register
                 <br><label for="name">verification code</label>
                 <input type="text" id="verificationCode" class="form-control" placeholder="Please enter the verification code"><canvas id="canvas"  width="100" height="30"></canvas><span id="codeHint"></span>
                 <br><button type="submit" class="btn btn-default">register</button>
+                <!-- enter error message here-->
+                <span></span>
             </form>
         </div>
     </div>
@@ -135,5 +129,8 @@ function randomColor(){
     return "rgb(" + r + "," + g + "," + b + ")";
 }
 </script>
+<script src="js/md5.js"></script>
+<script src="js/register.js"></script>
+
 </body>
 </html>

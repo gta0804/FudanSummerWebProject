@@ -1,3 +1,4 @@
+
 function checkName(){
     var value=document.getElementById("username").value;
     if(value.trim()==""){
@@ -24,6 +25,8 @@ function checkPassword(){
 
 function check(){
     if(checkName()&&checkPassword()){
+        var value=document.getElementById("password");
+        value=hex_md5(value);
         return true;
     }
     else{

@@ -72,6 +72,8 @@ function checkRepeatPassword(){
 
 function check(){
     if(checkName()&&checkEmail()&&checkPassword()&&checkRepeatPassword()&&document.getElementById("verificationCode").value.trim()!=""&&document.getElementById("codeHint").innerText==""){
+        var value=document.getElementById("password");
+        value=hex_md5(value);
         return true;
     }
     else{

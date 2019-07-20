@@ -1,18 +1,7 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: HUAWEI
-  Date: 2019/7/17
-  Time: 12:33
-  To change this template use File | Settings | File Templates.
+    This jsp file shows the arts details
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Details</title>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/Project.css">
-</head>
-<body>
 <!-- Here is the nav for administrators-->
 <%@include file="AdministratorsNav.jsp"%>
 
@@ -29,9 +18,12 @@
         <div class="col-md-7">
             <!-- place the description here-->
             <div>Enter the description here</div>
-            <div><button type="button" class="btn btn-default" onclick="">Add to collections</button></div>
+            <div>
+                <button type="button" class="btn btn-default" onclick="">Add to collections</button>
+                <button type="button" class="btn btn-default" onclick="">Edit</button>
+            </div>
             <!-- Here is the example table.The elements of the table are related to your database. -->
-            <table class="table " style="margin-top:10px;">
+            <table class="ui blue celled table" style="margin-top:10px;">
                 <tr>
                 <td>Arts details</td>
                 <td></td>
@@ -43,6 +35,10 @@
                 <tr>
                     <td>Year</td>
                     <td></td>
+                </tr>
+                <tr>
+                    <td>description video</td>
+                    <td><video></video></td>
                 </tr>
             </table>
         </div>

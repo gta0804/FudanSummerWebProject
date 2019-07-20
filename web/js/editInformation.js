@@ -62,6 +62,8 @@ function checkPassword(){
 
 function check(){
     if(checkName()&&checkEmail()&&checkDescription()&&checkPassword()){
+        var value=document.getElementById("password");
+        value=hex_md5(value);
         return true;
     }
     else{

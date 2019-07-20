@@ -5,8 +5,16 @@ This jsp file is the nav for visitors
 <html>
 <head>
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Project.css">
+    <script src="js/nav.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="Semantic-UI-CSS-master/semantic.js"></script>
 </head>
 <body>
 <div style="font-size: 1.1em;">
@@ -21,7 +29,3 @@ This jsp file is the nav for visitors
         </ul>
     </nav>
 </div>
-
-
-</body>
-</html>

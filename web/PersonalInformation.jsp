@@ -1,16 +1,6 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: HUAWEI
-  Date: 2019/7/17
-  Time: 23:17
-  To change this template use File | Settings | File Templates.
+    This jsp file shows personal information
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Personal Information</title>
-</head>
-<body>
 <!-- Here is the nav for administrators-->
 <%@include file="AdministratorsNav.jsp"%>
 <!-- Here is the search form-->
@@ -45,8 +35,11 @@
                 </tr>
                 <tr>
                     <td>Please enter the name of user here</td>
-                    <td><button id="agree"  type="button" class="btn btn-default" onclick="">agree</button></td>
-                    <td><button id="refuse" type="button" class="btn btn-default" onclick="">refuse</button></td>
+                    <td><div class="ui buttons">
+                        <button class="ui button">Refuse</button>
+                        <div class="or"></div>
+                        <button class="ui positive button">accept</button>
+                    </div></td>
                 </tr>
             </table>
         </div>
