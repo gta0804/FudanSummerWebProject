@@ -25,8 +25,7 @@ function checkPassword(){
 
 function check(){
     if(checkName()&&checkPassword()){
-        var value=document.getElementById("password");
-        value=hex_md5(value);
+        document.getElementById("password").value=hex_md5(document.getElementById("password").value);
         return true;
     }
     else{

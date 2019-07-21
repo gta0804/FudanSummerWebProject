@@ -9,7 +9,7 @@ function checkName(){
         return false;
     }
     else if(false){
-        //the duplicated username except the default username,related to the database
+        //the duplicated username,related to the database
         document.getElementById("usernameHint").innerText = "Duplicated username❌";
         return false;
     }
@@ -36,22 +36,15 @@ function checkEmail(){
     }
 }
 
-function checkDescription(){
-    var value=document.getElementById("description").value;
-    if(value==""){
-        document.getElementById("descriptionHint").innerText="Please enter your password❌";
-        return false;
-    }
-    else{
-        document.getElementById("descriptionHint").innerText="";
-        return true;
-    }
-}
-
 function checkPassword(){
     var value=document.getElementById("password").value;
+    var format=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,10}$/;
     if(value==""){
         document.getElementById("passwordHint").innerText="Please enter your password❌";
+        return false;
+    }
+    else if(!value.match(format)){
+        document.getElementById("passwordHint").innerText="The password format is incorrect.It should be between 6 and 10 characters with numbers and letters❌";
         return false;
     }
     else{
@@ -60,8 +53,25 @@ function checkPassword(){
     }
 }
 
+function checkRepeatPassword(){
+    var value=document.getElementById("repeatPassword").value;
+    if(value==""){
+        document.getElementById("repeatPasswordHint").innerText="Please repeat your password❌";
+        return false;
+    }
+    else if(value!=document.getElementById("password").value){
+        document.getElementById("repeatPasswordHint").innerText="Please ensure you enter the same password❌";
+        alert(document.getElementById("password").value);
+        return false;
+    }
+    else{
+        document.getElementById("repeatPasswordHint").innerText="";
+        return true;
+    }
+}
+
 function check(){
-    if(checkName()&&checkEmail()&&checkDescription()&&checkPassword()){
+    if(checkName()&&checkEmail()&&checkPassword()){
         document.getElementById("password").value=hex_md5(document.getElementById("password").value);
         return true;
     }

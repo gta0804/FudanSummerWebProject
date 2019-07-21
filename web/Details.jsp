@@ -40,10 +40,13 @@
                     <td>description video</td>
                     <td><video></video></td>
                 </tr>
+                <tr>
+                    <td>View</td>
+                    <td></td>
+                </tr>
             </table>
         </div>
     </div>
 </div>
-<%@include file="Footer.jsp"%>
 </body>
 </html>

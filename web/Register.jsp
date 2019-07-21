@@ -41,9 +41,6 @@ This jsp file is for visitors to register
     </div>
 </div>
 
-<!--Here is the copyRight row -->
-<%@include file="Footer.jsp"%>
-
 <!-- the javascript to draw and verify the verification code-->
 <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 <script>

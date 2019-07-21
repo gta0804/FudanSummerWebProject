@@ -26,23 +26,24 @@ This jsp file is a static page for homepage.
                 <img src="img/example_01.jpg" class="img-rounded" alt="First slide">
                 <div class="carousel-caption">
                     <h2>图片标题</h2>
-                    <div>
-                        图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述
-                    </div>
+                    <div>图片描述</div>
+                    <div><a class='huge ui violet button' href='Details.jsp?artsInformation'>详情</a></div>
                 </div>
             </div>
             <div class="item">
                 <img src="img/example_02.jpg" class="img-rounded" alt="Second slide">
                 <div class="carousel-caption">
                     <h2>图片标题</h2>
-                    <div>图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述</div>
+                    <div>图片描述</div>
+                    <div><a class='huge ui violet button' href='Details.jsp?artsInformation'>详情</a></div>
                 </div>
             </div>
             <div class="item">
                 <img src="img/example_03.jpg" class="img-rounded" alt="Third slide">
                 <div class="carousel-caption">
                     <h2>图片标题</h2>
-                    <div>图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述图片描述</div>
+                    <div>图片描述</div>
+                    <div><a class='huge ui violet button' href='Details.jsp?artsInformation'>详情</a></div>
                 </div>
             </div>
         </div>
@@ -87,17 +88,5 @@ This jsp file is a static page for homepage.
         </div>
     </div>
 </div>
-
-<!--Above is the copyRight row -->
-<footer>
-    <div class="navbar navbar-inverse">
-        <div class="navbar-left">
-            <p class="navbar-text">All images are copyright to the national museum. This is just a hypothetical site</p>
-        </div>
-        <div class="navbar-right">
-            <span class="navbar-text">&copy; 2019 Copyright National Museum</span>
-        </div>
-    </div>
-</footer>
 </body>
 </html>

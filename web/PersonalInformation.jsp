@@ -45,8 +45,6 @@
         </div>
     </div>
 </div>
-
-<%@include file="Footer.jsp"%>
 <script src="js/editInformation.js"></script>
 </body>
 </html>

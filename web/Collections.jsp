@@ -22,7 +22,5 @@
         </tr>
     </table>
 </div>
-
-<%@include file="Footer.jsp"%>
 </body>
 </html>

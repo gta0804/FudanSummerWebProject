@@ -22,40 +22,34 @@
             <td>image year</td>
             <td>image description</td>
             <td><video></video></td>
-            <td><button class="positive ui button" onclick="">Edit</button><button class="negative ui button">Delete</button></td>
-        </tr>
-        <tr>
-            <td><a href="Details.jsp"><img src="img/example_02.jpg" class="img-responsive" width="100" height="100"></a></td>
-            <td>image title</td>
-            <td>image year</td>
-            <td>image description</td>
-            <td><video></video></td>
-            <td><button class="positive ui button" onclick="">Edit</button><button class="negative ui button">Delete</button></td>
-        </tr>
-        <tr>
-            <td><a href="Details.jsp"><img src="img/example_03.jpg" class="img-responsive" width="100" height="100"></a></td>
-            <td>image title</td>
-            <td>image year</td>
-            <td>image description</td>
-            <td><video></video></td>
-            <td><button class="positive ui button" onclick="">Edit</button><button class="negative ui button">Delete</button></td>
+            <td><a class="positive ui button" href="WorksUpdating.jsp">Edit</a><button class="negative ui button">Delete</button></td>
         </tr>
     </table>
+
     <!--If you have time,you can use paging-->
-    <div class="text-center">
-        <ul class="pagination">
-            <li><a href="#">&laquo;</a></li>
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">&raquo;</a></li>
-        </ul>
+    <div class="text-center" style="margin-bottom: 20px;">
+        <form class="form-inline" method="" action="" onsubmit="return checkPage()">
+            <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+                <li>
+                    &nbsp;To page
+                    <input size="3" name="page" id="page" type="text" class="form control">
+                    &nbsp;<button type="submit" class="large ui blue button">Jump</button>
+                </li>
+            </ul>
+            <!-- Enter error message here-->
+            <span id="pageHint"></span>
+        </form>
     </div>
 </div>
 <!--The following is the form editing the works-->
-<div class="container">
+<div class="container" style="margin-bottom: 20px">
     <a tabindex="0" class="huge ui animated button" href="WorksUploading.jsp">
         <div class="visible content">Add new works</div>
         <div class="hidden content">
@@ -63,15 +57,6 @@
         </div>
     </a>
 </div>
-<footer style="margin-top:20px;">
-    <div class="navbar navbar-inverse">
-        <div class="navbar-left">
-            <p class="navbar-text">All images are copyright to the national museum. This is just a hypothetical site</p>
-        </div>
-        <div class="navbar-right">
-            <span class="navbar-text">&copy; 2019 Copyright National Museum</span>
-        </div>
-    </div>
-</footer>
+<script src="js/checkPageJumpingInWorksManagement.js"></script>
 </body>
 </html>

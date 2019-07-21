@@ -8,12 +8,10 @@ function checkName(){
         document.getElementById("usernameHint").innerText="The length of username should be between 6 and 20❌";
         return false;
     }
-    else if(false){
-        //the duplicated username,related to the database
-        document.getElementById("usernameHint").innerText = "Duplicated username❌";
-        return false;
-    }
     else{
+        //the duplicated username,related to the database,use ajax to implement it.
+        //document.getElementById("usernameHint").innerText = "Duplicated username❌";
+        //return false;
         document.getElementById("usernameHint").innerText = "";
         return true;
     }
@@ -38,7 +36,7 @@ function checkEmail(){
 
 function checkPassword(){
     var value=document.getElementById("password").value;
-    var format=/(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,10}/;
+    var format=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,10}$/;
     if(value==""){
         document.getElementById("passwordHint").innerText="Please enter your password❌";
         return false;
@@ -72,8 +70,7 @@ function checkRepeatPassword(){
 
 function check(){
     if(checkName()&&checkEmail()&&checkPassword()&&checkRepeatPassword()&&document.getElementById("verificationCode").value.trim()!=""&&document.getElementById("codeHint").innerText==""){
-        var value=document.getElementById("password");
-        value=hex_md5(value);
+        document.getElementById("password").value=hex_md5(document.getElementById("password").value);
         return true;
     }
     else{

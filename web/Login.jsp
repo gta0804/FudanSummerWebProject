@@ -31,8 +31,6 @@
     </div>
 </div>
 
-<!--Here is the copyRight row -->
-<%@include file="Footer.jsp"%>
 <script src="js/md5.js"></script>
 <script src="js/login.js"></script>
 </body>

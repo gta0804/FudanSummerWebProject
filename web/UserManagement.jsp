@@ -9,7 +9,7 @@
 <%@include file="AdministratorsNav.jsp"%>
 <%@include file="SearchHeader.jsp"%>
 <div class="container">
-    <h2>Works List</h2>
+    <h2>Users List</h2>
     <table class="ui orange celled table">
         <tr>
             <th>username</th>
@@ -30,10 +30,9 @@
             </td>
         </tr>
         <tr>
-            <td colspan="5"><a href="Register.jsp" class="huge positive ui button ">Add new users</a></td>
+            <td colspan="5"><a href="AddUsers.jsp" class="huge positive ui button ">Add new users</a></td>
         </tr>
     </table>
 </div>
-<%@include file="Footer.jsp"%>
 </body>
 </html>
